@@ -20,19 +20,19 @@ namespace XmlButon
         {
             if (string.IsNullOrWhiteSpace(txtAd.Text))
             {
-                MessageBox.Show("Ad boþ olamaz");
+                MessageBox.Show("Ad bos olamaz");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(txtYas.Text))
             {
-                MessageBox.Show("Yaþ boþ olamaz");
+                MessageBox.Show("Yaþ bos olamaz");
                 return;
             }
 
             if (!int.TryParse(txtYas.Text, out int yas))
             {
-                MessageBox.Show("Yaþ sayý olmalý");
+                MessageBox.Show("Yaþ sayi olmalý");
                 return;
             }
 
@@ -64,7 +64,7 @@ namespace XmlButon
                 txtAd.Text = kisi.Ad;
                 txtYas.Text = kisi.Yas.ToString();
             }
-            MessageBox.Show("Veri yüklendi");
+            MessageBox.Show("Veri yuklendi");
 
         }
         
